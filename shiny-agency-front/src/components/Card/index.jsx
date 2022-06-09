@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import DefaultPicture from '../../assets/profile.png'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
+import DefaultPicture from '../../assets/profile.png'
 
 const CardLabel = styled.span`
   color: #5843e4;
@@ -18,8 +18,8 @@ const CardTitle = styled.span`
 `
 
 const CardImage = styled.img`
-  height: 80px;
-  width: 80px;
+  height: 150px;
+  width: 150px;
   align-self: center;
   border-radius: 50%;
 `
@@ -57,8 +57,8 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
-  title: '',
   label: '',
+  title: '',
   picture: DefaultPicture,
 }
 
